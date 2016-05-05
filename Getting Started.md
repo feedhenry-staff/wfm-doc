@@ -32,6 +32,7 @@ The FeedHenry platform provides a set of WFM project template to help you get th
 Steps:
 1. Create a blank appform theme
   * Navigate to `Drag & Drop Apps` -> `Forms Themes`
+    <br><img src="assets/images/select-forms-themes.png" title="Select Forms Themes" alt="Select Forms Themes" height="400px">
   * Click `New Theme`
   * Select the `Base Template`
   * Name the theme: eg. *wfm*
