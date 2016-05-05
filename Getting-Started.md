@@ -72,7 +72,9 @@ Steps:
   * Click `Create Auth Policy`
 
 1. Associate the wfm-auth mBaaS service with the project
+
 1. Copy the project id from the mBaaS service, and set it as the WFM_AUTH_GUID
+
 1. Check that the auth service, the cloud app, and the portal app are all deployed and started
 
 The apps are now created, configured, and deployed.  Next let's create some app forms to use with the workflows.
