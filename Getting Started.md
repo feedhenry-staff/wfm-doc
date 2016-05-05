@@ -37,6 +37,7 @@ Steps:
   * Select the `Base Template`
   * Name the theme: eg. *wfm*
   * Click `Create`
+
 1. Create a new project using the `WFM demo` project template
   * Select the `Projects` header menu item
   * Click `New project`
@@ -44,6 +45,7 @@ Steps:
   * Name the project. eg: *wfm-demo*
   * Click `Create`
   * wait, then click `Finish`
+
 1. Create a new mBaaS Service using the wfm-auth service template
   * Select the `Services & APIs` header menu item
   * Click `Provision MBaaS Service/API`
@@ -55,6 +57,7 @@ Steps:
   * Click `Finish`
   * On the wfm-auth page, select `Deploy` from them left-hand menu
   * Click `Deploy Cloud App`
+
 1. Create an auth policy using this new mBaaS service
   * Navigate to `Admin` -> `Auth Policies`
   * Click `Create`
@@ -66,6 +69,7 @@ Steps:
   * Validate the settings using the username *trever* and password *123*
     * The response JSON should have the `status` property with value *ok*
   * Click `Create Auth Policy`
+
 1. Associate the wfm-auth mBaaS service with the project
 1. Copy the project id from the mBaaS service, and set it as the WFM_AUTH_GUID
 1. Check that the auth service, the cloud app, and the portal app are all deployed and started
