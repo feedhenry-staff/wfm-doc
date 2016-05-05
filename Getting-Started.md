@@ -45,15 +45,16 @@ Steps:
   * Select the `WFM Demo Project` template (under *Tech Preview*)
   * Name the project. eg: *wfm-demo*
   * Click `Create`
-  * wait, then click `Finish` (at the bottom of the page)
+  * Wait, then click `Finish` (at the bottom of the page)
     <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
 
 1. Create a new mBaaS Service using the wfm-auth service template
   * Select the `Services & APIs` header menu item
   * Click `Provision MBaaS Service/API`
   * Select the `WFM Auth Service` template (under Authentication)
-  * Click `Next`
   * Name the service; eg. *wfm-auth*
+  * Click `Next`
+    <br><img src="assets/images/auth-service.png" title="Auth Service" alt="Auth Service" height="400px">
   * Select the environment for initial deployment
   * Click `Next`
   * Click `Finish`
@@ -62,10 +63,11 @@ Steps:
 
 1. Create an auth policy using this new mBaaS service
   * Navigate to `Admin` -> `Auth Policies`
+    <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
   * Click `Create`
   * Name the policy; eg. *wfm-auth-policy*
   * Select the `MBaaS Service` type
-  * Select the `wfm-atuh` service
+  * Select the `wfm-auth` service
   * Input `/api/wfm/user/auth` as the endpoint
   * Select the default environment
   * Validate the settings using the username *trever* and password *123*
