@@ -83,7 +83,9 @@ The apps are now created, configured, and deployed.  Next let's create some app 
 In this step we will create a couple of appforms for use with the WFM workflows.  See the wfm-appform README for a list of field types currently supported by appforms
 
 Steps:
+
 1. Navigate to ...
+
 1. Create a new form, for example:
   * Name: signoff
   * Field 1: Text field
@@ -91,33 +93,49 @@ Steps:
     * code: "name"
     * required: "true"
   ...
+
 1. Create another form, for example:
   * Name: identification
   * ...
+
 1. Deploy the forms
+
 1. Associate the forms with the project
 
 ### Embed the forms in a WFM workflows using the WFM portal app
 Now that we have created some appforms, let's embed them in a WFM workflow.
 
 1. Navigate to  the portal app
+
 1. Click the *open in new window* button
+
 1. log in as *daisy* with password *123*
+
 1. Navigate to Forms, verify that the forms we created are present and listed
+
 1. Navigate to workflows
+
 1. Select the workflow *signoff*
+
 1. ...
 
 ### Using the mobile app
 Now that we have configured a workflow using our appforms, let's push a workorder through the workflow.
 
 1. Navigate to eh mobile-app in the RHMAP studio
+
 2. login as *trever*, password: *123*
+
 3. From the list of workorders select workorder ...
+
 4. ...
 
 ## Other WFM use cases to try
+
 1. Create a new workflow using static HTML defined forms
+
 1. Sending a message from the portal to the client
+
 1. Create a new user, assign them to a group, assign workorders to him
+
 1. Schedule workorders using the scheduler
