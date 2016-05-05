@@ -45,7 +45,8 @@ Steps:
   * Select the `WFM Demo Project` template (under *Tech Preview*)
   * Name the project. eg: *wfm-demo*
   * Click `Create`
-  * wait, then click `Finish`
+  * wait, then click `Finish` (at the bottom of the page)
+    <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
 
 1. Create a new mBaaS Service using the wfm-auth service template
   * Select the `Services & APIs` header menu item
