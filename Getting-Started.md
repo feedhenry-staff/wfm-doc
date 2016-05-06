@@ -75,10 +75,34 @@ Steps:
   * Click `Create Auth Policy`
 
 1. Associate the wfm-auth mBaaS service with the project
+  * Select the `Services & APIs` header menu item
+  * Select the Service created above; eg. *wfm-auth*
+  * Scroll down to the *Service Settings*, *Access Control*; select the project created above; eg. *wfm*
+    <br><img src="assets/images/associate-service.png" title="Associate Service" alt="Associate Service" height="400px">
+  * Click the `Save Service` button
+  * From the L.H.S. menu, select `Environment Variables`
+  * Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the App to the one in the system, if they differ, click the `Push Environment Variables` button
+    <br><img src="assets/images/service-env-vars.png" title="Service Env Vars" alt="Service Env Vars" height="400px">
 
 1. Copy the project id from the mBaaS service, and set it as the WFM_AUTH_GUID
+  * From the L.H.S. menu, select `Details`
+  * Click the `Copy` button next to the `Service ID field`
+  <br><img src="assets/images/copy-service-id.png" title="Copy Service ID" alt="Copy Service ID" height="400px">
+  * Select the Projects` header menu item
+  * Select the project created above; eg. *wfm*
+  * Select the cloud app
+  * From the L.H.S. menu, select `Environment Variables`
+  * Click the `Add Variable` button
+    <br><img src="assets/images/project-add-env-var.png" title="Project Add Env Var" alt="Project Add Env Var" height="400px">
+  * Type in `WFM_AUTH_GUID` for the *name*, and paste in the *Service ID* copied above for the *value*
+  * Click the `Push Environment Variables` button
 
-1. Check that the auth service, the cloud app, and the portal app are all deployed and started
+
+1. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started
+  * For each of the above mentioned apps, select `Deploy` from the L.H.S. menu
+  * Ensure that the most recent deployment has a *result* of `Success`
+  <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
+  * If it does not indicate success, click the `Deploy Cloud App` and verify the next deployment is successful
 
 The apps are now created, configured, and deployed.  Next let's create some app forms to use with the workflows.
 
