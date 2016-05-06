@@ -107,27 +107,59 @@ Steps:
 The apps are now created, configured, and deployed.  Next let's create some app forms to use with the workflows.
 
 ### Creating appforms
-In this step we will create a couple of appforms for use with the WFM workflows.  See the wfm-appform README for a list of field types currently supported by appforms
+In this step we will create a couple of appforms for use with the WFM workflows.  
+
+* Follow the FeedHenry docs for creating an appform:
+<br>http://docs.feedhenry.com/v3/guides/create_a_form.html
+* See the wfm-appform README for a list of field types currently supported by appforms
+  <br>https://github.com/feedhenry-staff/wfm-appform
 
 Steps:
 
-1. Navigate to ...
-
-1. Create a new form, for example:
-  * Name: signoff
+1. Create and deploy a new form, for example:
+  * Name: "wfm-signoff"
   * Field 1: Text field
-    * name: "Name"
-    * code: "name"
-    * required: "true"
-  ...
+    * Name: "Name"
+    * Default Value: "John Doe"
+    * Instructions: "Please provide your name."
+    * Field Code: "name"
+    * Required: "true"
+  * Field 2: Datestamp
+    * Name: "Datestamp"
+    * Field Code: "date"
+    * Required: "true"
+    * Field Type: "Date only"
+  * Field 3: Signature Capture
+    * Name: "Signature"
+    * Instructions: "Please provide your signature."
+    * Field Code: "signature"
+    * Required: "true"
 
-1. Create another form, for example:
-  * Name: identification
-  * ...
-
-1. Deploy the forms
+1. Create a second form, for example:
+  * Name: "wfm-identity"
+  * Field 1: Text field
+    * Name: "Name"
+    * Default Value: "John Doe"
+    * Instructions: "Please provide your name."
+    * Field Code: "name"
+    * Required: "true"
+  * Field 2: Number
+    * Name: "Age"
+    * Default Value: "40"
+    * Instructions: "Please provide your age."
+    * Field Code: "age"
+    * Required: "true"
+    * Minimum / Maximum
+      * Min: 0
+      * Max: 100
 
 1. Associate the forms with the project
+  * Select the `Projects` header menu item
+  * Select the project created above; eg. *wfm*
+  * Select the Forms menu
+  * In the `Forms & Theme` box, expand the `Forms` drop down list
+  * Select the forms created above; eg. wfm-signoff and wfm-identity
+  <br><img src="assets/images/associate-forms.png" title="Associate forms" alt="Associate Forms" height="400px">
 
 ### Embed the forms in a WFM workflows using the WFM portal app
 Now that we have created some appforms, let's embed them in a WFM workflow.
