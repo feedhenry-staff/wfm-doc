@@ -1,17 +1,13 @@
 # Getting Started with WFM
 
 ## Overview
-A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.
-FeedHenry WFM leverages commoditized mobile hardware, making use of each employee's mobile phone.
+A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.  FeedHenry WFM leverages commoditized mobile hardware, making use of each employee's mobile phone.
 
 ## WFM Structure
-WFM 2 consists of a set of reusable modules. 
-A demo application is provided that showcases how these modules can be assembled into an application.
+WFM 2 consists of a set of reusable modules. A demo application is provided that showcases how these modules can be assembled into an application.
 
 ### WFM Modules
-WFM modules are packaged and distributed via [npm](https://www.npmjs.com/). 
-They are best included in your application using [browserify](http://browserify.org/).
-WFM modules will export one or more of:
+WFM modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are best included in your application using [browserify](http://browserify.org/).  WFM modules will export one or more of:
 
 * Angular.js directives or services providing client-side functionality for both the mobile and portal clients.
 * Express.js routes providing a REST API to be consumed by the client-side portions of the module.
@@ -20,14 +16,12 @@ WFM modules will export one or more of:
 Refer to the READMEs of the respective modules for details on their purpose and consumption.
 
 #### Loose Coupling
-WFM modules make use of the [mediator pattern](https://addyosmani.com/largescalejavascript/) to enable loose coupling between the WFM modules and their consuming applications.
-Refer to the WFM mediator README for usage instructions and API details.
+WFM modules make use of the [mediator pattern](https://addyosmani.com/largescalejavascript/) to enable loose coupling between the WFM modules and their consuming applications.  Refer to the WFM mediator README for usage instructions and API details.
 
 ### WFM Demo Apps
-The demo applications run on Red Hat Mobile Application Platform (RHMAP).
-The demo project consists of:
+The demo applications run on Red Hat Mobile Application Platform (RHMAP).  The demo project consists of:
 
-* **wfm-portal**: a sample back-office application. 
+* **wfm-portal**: a sample back-office application.
 This is where work is collected and pushed to the workers out in the field.
 * **wfm-mobile**: is the mobile application running on the field workers' mobile devices.
 * **wfm-cloud**: the cloud application provides the gateway into the FeedHenry MBaaS.
@@ -40,9 +34,8 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
 
 1. Create a blank Forms theme.
   1. Navigate to **Drag & Drop Apps -> Forms Themes**.
-    
-    ![Select Forms Themes](assets/images/select-forms-themes.png)
-    
+    <br><img src="assets/images/select-forms-themes.png" title="Select Forms Themes" alt="Select Forms Themes" height="400px">
+
   2. Click **New Theme**.
   3. Select the **Base Template**.
   4. Name the theme, for example **wfm**.
@@ -55,8 +48,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   4. Name the project, for example **wfm-demo**.
   5. Click **Create**.
   6. Wait until the project gets created, then click **Finish** at the bottom of the page.
-  
-    ![New Project](assets/images/new-project.png)
+    <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
 
 3. Create a new MBaaS Service using the **WFM Auth Service** template.
   1. Select the **Services & APIs** header menu item.
@@ -64,9 +56,8 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   3. Select the **WFM Auth Service** template (under Authentication).
   4. Name the service, for example **wfm-auth**.
   5. Click **Next**.
-  
-    ![Auth Service](assets/images/auth-service.png)
-    
+    <br><img src="assets/images/auth-service.png" title="Auth Service" alt="Auth Service" height="400px">
+
   6. Select the environment for initial deployment.
   7. Click **Next**.
   8. Click **Finish**.
@@ -75,9 +66,8 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
 
 4. Create an auth policy using this new MBaaS service.
   1. Navigate to **Admin -> Auth Policies**.
-  
-    ![New Project](assets/images/auth-policy.png)
-    
+    <br><img src="assets/images/auth-policy.png" title="New Project" alt="New Project" height="400px">
+
   2. Click **Create**.
   3. Name the policy, for example **wfm-auth-policy**.
   4. Select the **MBaaS Service** type.
@@ -85,38 +75,34 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   6. Enter `/api/wfm/user/auth` as the endpoint.
   7. Select the default environment.
   8. Validate the settings using the user name `trever` and password `123`.
-  
+
     * The response JSON should have the `status` property with value `ok`.
-    
+
   9. Click **Create Auth Policy**.
 
 5. Associate the **WFM Auth Service** MBaaS service with the project.
   1. Select the **Services & APIs** header menu item.
   2. Select the **WFM Auth Service** created in step 3.
   3. Scroll down to the **Service Settings**, **Access Control**; select the project created above; eg. **wfm**.
-  
-    ![Associate Service](assets/images/associate-service.png)
-    
+    <br><img src="assets/images/associate-service.png" title="Associate Service" alt="Associate Service" height="400px">
+
   4. Click the **Save Service** button.
   5. From the left-hand side menu, select **Environment Variables**.
   6. Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the App to the one in the system. If they differ, click the **Push Environment Variables** button.
-  
-    ![Service Env Vars](assets/images/service-env-vars.png)
+    <br><img src="assets/images/service-env-vars.png" title="Service Env Vars" alt="Service Env Vars" height="400px">
 
 6. Copy the project ID from the MBaaS service, and set it as the `WFM_AUTH_GUID`.
   1. From the left-hand side menu, select **Details**.
   2. Click the **Copy** button next to the **Service ID field**.
-  
-    ![Copy Service ID](assets/images/copy-service-id.png)
-    
+  <br><img src="assets/images/copy-service-id.png" title="Copy Service ID" alt="Copy Service ID" height="400px">
+
   3. Select the **Projects** header menu item.
   4. Select the **wfm-demo** project created in step 2.
   5. Select the cloud app.
   6. From the left-hand side menu, select **Environment Variables**.
   7. Click **Add Variable**.
-  
-    ![Project Add Env Var](assets/images/project-add-env-var.png)
-    
+    <br><img src="assets/images/project-add-env-var.png" title="Project Add Env Var" alt="Project Add Env Var" height="400px">
+
   8. Enter `WFM_AUTH_GUID` for the **name**, and paste in the **Service ID** copied above for the **value**.
   9. Click **Push Environment Variables**.
 
@@ -124,9 +110,8 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
 7. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
   1. For each of the above mentioned apps, select **Deploy** from the left-hand side menu.
   2. Ensure that the most recent deployment has a **result** of **Success**.
-  
-    ![Deploy Status](assets/images/deploy-status.png)
-    
+  <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
+
   3. If it does not indicate success, click **Deploy Cloud App** and verify the next deployment is successful.
 
 The apps are now created, configured, and deployed.
