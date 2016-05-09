@@ -19,7 +19,7 @@ Refer to the READMEs of the respective modules for details on their purpose and 
 WFM modules make use of the [mediator pattern](https://addyosmani.com/largescalejavascript/) to enable loose coupling between the WFM modules and their consuming applications.  Refer to the WFM mediator README for usage instructions and API details.
 
 ### WFM Demo apps
-The demo applications run on Red Hat Application Platform (RHMAP).  The demo project consists of:
+The demo applications run on Red Hat Mobile Application Platform (RHMAP).  The demo project consists of:
 
 1. **wfm-portal**: a sample back-office application.  This is where work is collected and pushed to the workers out in the field.
 2. **wfm-modile**: is the mobile application running on the field workers mobile devices.
