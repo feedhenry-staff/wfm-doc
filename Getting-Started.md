@@ -8,6 +8,7 @@ WFM 2 consists of a set of re-usable modules.  A demo application is provided th
 
 ### WFM Modules
 WFM modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are best included in your application using [browserify](http://browserify.org/).  WFM modules will export one or more of:
+
 1. Angular.js directives or services providing client-side functionality for both the mobile and portal clients.
 2. Express.js routes providing a REST API to be consumed by the client-side portions of the module.
 3. FeedHenry sync configurations for seamlessly enabling data-sync of a module's data
