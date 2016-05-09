@@ -64,7 +64,7 @@ Steps:
 
 1. Create an auth policy using this new mBaaS service
   * Navigate to `Admin` -> `Auth Policies`
-    <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
+    <br><img src="assets/images/auth-policy.png" title="New Project" alt="New Project" height="400px">
   * Click `Create`
   * Name the policy; eg. *wfm-auth-policy*
   * Select the `MBaaS Service` type
