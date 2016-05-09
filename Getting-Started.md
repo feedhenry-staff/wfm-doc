@@ -22,8 +22,8 @@ WFM modules make use of the [mediator pattern](https://addyosmani.com/largescale
 The demo applications run on Red Hat Mobile Application Platform (RHMAP).  The demo project consists of:
 
 1. **wfm-portal**: a sample back-office application.  This is where work is collected and pushed to the workers out in the field.
-2. **wfm-modile**: is the mobile application running on the field workers mobile devices.
-3. **wfm-cloud**: the cloud applications provides the gateway into the FeedHenry mBaas.
+2. **wfm-mobile**: is the mobile application running on the field workers mobile devices.
+3. **wfm-cloud**: the cloud applications provides the gateway into the FeedHenry mBaaS.
 4. **wfm-auth**: an mBaaS service that integrates with the FeedHenry authentication system.
 
 ## Running the WFM demo apps
