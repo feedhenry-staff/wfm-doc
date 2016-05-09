@@ -4,14 +4,14 @@
 A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.  FeedHenry WFM leverages commoditized mobile hardware, making use of each employee's mobile phone.
 
 ## WFM Structure
-WFM 2 consists of a set of reusable modules. A demo application is provided that showcases how these modules can be assembled into an application.
+WFM 2 consists of a set of reusable modules. A demo application is provided as a project template that showcases how these modules can be assembled into an application.
 
 ### WFM Modules
-WFM modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are best included in your application using [browserify](http://browserify.org/).  WFM modules will export one or more of:
+WFM modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are designed to be included in your application using [browserify](http://browserify.org/).  WFM modules exports one or more of:
 
 * Angular.js directives or services providing client-side functionality for both the mobile and portal clients.
 * Express.js routes providing a REST API to be consumed by the client-side portions of the module.
-* FeedHenry sync configurations for seamlessly enabling data synchronization of a module's data.
+* FeedHenry sync configurations for enabling data synchronization of a module's data.
 
 Refer to the READMEs of the respective modules for details on their purpose and consumption.
 
@@ -24,7 +24,7 @@ The demo applications run on Red Hat Mobile Application Platform (RHMAP).  The d
 * **wfm-portal**: a sample back-office application.
 This is where work is collected and pushed to the workers out in the field.
 * **wfm-mobile**: is the mobile application running on the field workers' mobile devices.
-* **wfm-cloud**: the cloud application provides the gateway into the FeedHenry MBaaS.
+* **wfm-cloud**: the cloud application provides the gateway into the RHMAP MBaaS.
 * **wfm-auth**: an MBaaS service that integrates with the FeedHenry authentication system.
 
 ## Running the WFM Demo Apps
@@ -88,7 +88,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
 
   4. Click the **Save Service** button.
   5. From the left-hand side menu, select **Environment Variables**.
-  6. Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the App to the one in the system. If they differ, click the **Push Environment Variables** button.
+  6. Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the *App* section to the one in the *System* section. If they differ, click the **Push Environment Variables** button.
     <br><img src="assets/images/service-env-vars.png" title="Service Env Vars" alt="Service Env Vars" height="400px">
 
 6. Copy the project ID from the MBaaS service, and set it as the `WFM_AUTH_GUID`.
