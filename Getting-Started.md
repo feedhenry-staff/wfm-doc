@@ -50,7 +50,14 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   6. Wait until the project gets created, then click **Finish** at the bottom of the page.
     <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
 
-3. Create a new MBaaS Service using the **WFM Auth Service** template.
+3. Associate the **Forms theme** with the **WFM Demo Project**
+  1. Select the **Projects** header menu item
+  2. Open the **wfm-demo** project that you have created
+  3. Select **Forms** from the project menu
+  4. Select the **wfm** theme you have created in the **Project  Theme** drop-down
+  5. Click on **Save**
+
+4. Create a new MBaaS Service using the **WFM Auth Service** template.
   1. Select the **Services & APIs** header menu item.
   2. Click **Provision MBaaS Service/API**.
   3. Select the **WFM Auth Service** template (under Authentication).
@@ -64,7 +71,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   9. On the **Details** page of the MBaaS service, select **Deploy** from the left-hand side menu.
   10. Click **Deploy Cloud App**.
 
-4. Create an auth policy using this new MBaaS service.
+5. Create an auth policy using this new MBaaS service.
   1. Navigate to **Admin -> Auth Policies**.
     <br><img src="assets/images/auth-policy.png" title="Auth Policy" alt="Auth Policy" height="400px">
 
@@ -80,7 +87,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
 
   9. Click **Create Auth Policy**.
 
-5. Associate the **WFM Auth Service** MBaaS service with the project.
+6. Associate the **WFM Auth Service** MBaaS service with the project.
   1. Select the **Services & APIs** header menu item.
   2. Select the **WFM Auth Service** created in step 3.
   3. Scroll down to the **Service Settings**, **Access Control**; select the project created above; eg. **wfm**.
@@ -91,7 +98,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   6. Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the *App* section to the one in the *System* section. If they differ, click the **Push Environment Variables** button.
     <br><img src="assets/images/service-env-vars.png" title="Service Env Vars" alt="Service Env Vars" height="400px">
 
-6. Copy the project ID from the MBaaS service, and set it as the `WFM_AUTH_GUID`.
+7. Copy the project ID from the MBaaS service, and set it as the `WFM_AUTH_GUID`.
   1. From the left-hand side menu, select **Details**.
   2. Click the **Copy** button next to the **Service ID field**.
   <br><img src="assets/images/copy-service-id.png" title="Copy Service ID" alt="Copy Service ID" height="400px">
@@ -107,7 +114,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   9. Click **Push Environment Variables**.
 
 
-7. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
+8. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
   1. For each of the above mentioned apps, select **Deploy** from the left-hand side menu.
   2. Ensure that the most recent deployment has a **result** of **Success**.
   <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
