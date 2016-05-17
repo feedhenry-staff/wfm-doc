@@ -76,7 +76,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
     <br><img src="assets/images/auth-policy.png" title="Auth Policy" alt="Auth Policy" height="400px">
 
   2. Click **Create**.
-  3. Name the policy, for example **wfm-auth-policy**.
+  3. Name the policy : **wfm**.
   4. Select the **MBaaS Service** type.
   5. Select the `wfm-auth` service.
   6. Enter `/api/wfm/user/auth` as the endpoint.
