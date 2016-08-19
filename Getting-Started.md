@@ -76,7 +76,7 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
     <br><img src="assets/images/auth-policy.png" title="Auth Policy" alt="Auth Policy" height="400px">
 
   2. Click **Create**.
-  3. Name the policy : **wfm**.
+  3. Name the policy : eg. **wfm**.
   4. Select the **MBaaS Service** type.
   5. Select the `wfm-auth` service.
   6. Enter `/api/wfm/user/auth` as the endpoint.
@@ -113,8 +113,16 @@ RHMAP provides a set of WFM project templates to help you get the WFM demo apps 
   8. Enter `WFM_AUTH_GUID` for the **name**, and paste in the **Service ID** copied above for the **value**.
   9. Click **Push Environment Variables**.
 
+8. Set the auth policy name as the `WFM_AUTH_POLICY_ID`.
+  1. Select the **Projects** header menu item.
+  2. Select the **wfm-demo** project.
+  3. Select the cloud app.
+  4. From the left-hand side menu, select **Environment Variables**.
+  5. Click **Add Variable**.
+  6. Enter `WFM_AUTH_POLICY_ID` for the **name**, and set the auth policy name created in step 5 for the **value**.
+  7. Click **Push Environment Variables**.
 
-8. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
+9. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
   1. For each of the above mentioned apps, select **Deploy** from the left-hand side menu.
   2. Ensure that the most recent deployment has a **result** of **Success**.
   <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
