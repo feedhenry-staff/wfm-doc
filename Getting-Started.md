@@ -10,6 +10,7 @@
     - [Raincatcher Demo Apps](#raincatcher-demo-apps)
   - [Running the Raincatcher Demo Apps](#running-the-raincatcher-demo-apps)
     - [Create and Configure the Raincatcher Demo Project Using the Project Templates](#create-and-configure-the-raincatcher-demo-project-using-the-project-templates)
+  - [Running The Raincatcher Apps Locally](#running-the-raincatcher-apps-locally)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -145,3 +146,7 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   3. If it does not indicate success, click **Deploy Cloud App** and verify the next deployment is successful.
 
 The apps are now created, configured, and deployed.
+
+## Running The Raincatcher Apps Locally
+
+See the [Running The Demo Raincatcher Solution Locally](Running-locally.md) guide for getting set up locally for Raincatcher development.
