@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [RHMAP 3.10.0 Release notes for WFM](#rhmap-3100-release-notes-for-wfm)
+  - [Known issues](#known-issues)
+    - [Cloud app](#cloud-app)
+    - [Portal client](#portal-client)
+    - [Mobile client](#mobile-client)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # RHMAP 3.10.0 Release notes for WFM
 
 ## Known issues
