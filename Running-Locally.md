@@ -46,13 +46,13 @@ Some Raincatcher modules require features in the Red Hat Mobile Application Plat
 
 ### Using Drag & Drop Apps Locally
 
-The *raincatcher-appforms* module requires that the containing cloud app has access to a running MBaaS. This allows the local *raincatcher-demo-cloud* app to access
+The *raincatcher-appforms* module requires that the containing cloud app has access to a running RHMAP MBaaS. This allows the local *raincatcher-demo-cloud* app to access
 
 - Forms
 - Themes
 - Drag & Drop App Config
 
-See [this guide](http://docs.feedhenry.com/v3/guides/create_a_forms_project_single_theme.html) to for more Drag & Drop Apps feature detail.
+See [this guide](http://docs.feedhenry.com/v3/guides/create_a_forms_project_single_theme.html) for more Drag & Drop Apps feature detail.
 
 If you have access to the RHMAP Platform, you can use an existing Cloud App environment variables to populate environment variables from the Cloud App in a Forms Project.
 
