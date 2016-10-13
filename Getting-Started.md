@@ -8,7 +8,7 @@
     - [Raincatcher Modules](#raincatcher-modules)
       - [Loose Coupling](#loose-coupling)
     - [Raincatcher Demo Apps](#raincatcher-demo-apps)
-  - [Running the Raincatcher Demo Apps](#running-the-raincatcher-demo-apps)
+  - [Running the Raincatcher Demo Apps In RHMAP](#running-the-raincatcher-demo-apps-in-rhmap)
     - [Create and Configure the Raincatcher Demo Project Using the Project Templates](#create-and-configure-the-raincatcher-demo-project-using-the-project-templates)
   - [Running The Raincatcher Apps Locally](#running-the-raincatcher-apps-locally)
 
@@ -20,7 +20,7 @@
 A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.  FeedHenry Raincatcher leverages commoditized mobile hardware, making use of each employee's mobile phone.
 
 ## Raincatcher Structure
-Raincatcher consists of a set of reusable modules. A demo application is provided as a project template that showcases how these modules can be assembled into an application.
+Raincatcher consists of a set of reusable modules. A demo application is provided as a project template that showcases how these modules can be assembled into an application. See [this guide](Demo-Solution-Architecture.md) for details on the Demo Solution.
 
 ### Raincatcher Modules
 Raincatcher modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are designed to be included in your application using [browserify](http://browserify.org/).  Raincatcher modules export one or more of:
@@ -31,19 +31,7 @@ Raincatcher modules are packaged and distributed via [npm](https://www.npmjs.com
 
 Refer to the READMEs of the respective modules for details on their purpose and consumption.
 
-#### Loose Coupling
-Raincatcher modules make use of the [mediator pattern](https://addyosmani.com/largescalejavascript/) to enable loose coupling between the Raincatcher modules and their consuming applications.  Refer to the [Raincatcher mediator README](https://github.com/feedhenry-raincatcher/raincatcher-mediator/blob/master/README.md) for usage instructions and API details.
-
-### Raincatcher Demo Apps
-The demo applications run on Red Hat Mobile Application Platform (RHMAP).  The demo project consists of:
-
-* **wfm-portal**: a sample back-office application.
-This is where work is collected and pushed to the workers out in the field.
-* **wfm-mobile**: is the mobile application running on the field workers' mobile devices.
-* **wfm-cloud**: the cloud application provides the gateway into the RHMAP MBaaS.
-* **wfm-auth**: an MBaaS service that integrates with the FeedHenry authentication system.
-
-## Running the Raincatcher Demo Apps
+## Running the Raincatcher Demo Apps In RHMAP
 RHMAP provides a set of Raincatcher project templates to help you get the Raincatcher demo apps up and running.
 
 ### Create and Configure the Raincatcher Demo Project Using the Project Templates
