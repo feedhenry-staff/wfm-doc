@@ -5,6 +5,7 @@
 - [Raincatcher Documentation](#raincatcher-documentation)
   - [Overview](#overview)
   - [Getting Started With The Demo Solution](#getting-started-with-the-demo-solution)
+  - [Demo Solution Architecture](#demo-solution-architecture)
   - [Running The Demo Solution Locally](#running-the-demo-solution-locally)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -18,6 +19,10 @@ This repository contains useful documentation for developers wishing to use Rain
 ## Getting Started With The Demo Solution
 
 The [Getting Started With The Demo Solution Guide](Getting-Started.md) demonstrates how to use the Red Hat Mobile Application Platform (RHMAP) to import the demo solution and get it up and running.
+
+## Demo Solution Architecture
+
+The [Demo Solution Architecture](Demo-Solution-Architecture.md) document describes the architecture of the Demo solution and how it integrates with Raincatcher modules.
 
 ## Running The Demo Solution Locally
 
