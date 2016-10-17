@@ -6,11 +6,10 @@
   - [Overview](#overview)
   - [Raincatcher Structure](#raincatcher-structure)
     - [Raincatcher Modules](#raincatcher-modules)
-      - [Loose Coupling](#loose-coupling)
-    - [Raincatcher Demo Apps](#raincatcher-demo-apps)
   - [Running the Raincatcher Demo Apps In RHMAP](#running-the-raincatcher-demo-apps-in-rhmap)
     - [Create and Configure the Raincatcher Demo Project Using the Project Templates](#create-and-configure-the-raincatcher-demo-project-using-the-project-templates)
   - [Running The Raincatcher Apps Locally](#running-the-raincatcher-apps-locally)
+  - [Integrating A New Module Into The Demo Solution](#integrating-a-new-module-into-the-demo-solution)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -138,3 +137,7 @@ The apps are now created, configured, and deployed.
 ## Running The Raincatcher Apps Locally
 
 See the [Running The Demo Raincatcher Solution Locally](Running-locally.md) guide for getting set up locally for Raincatcher development.
+
+## Integrating A New Module Into The Demo Solution
+
+The [Module Integration](Module-Integration.md) guide explains how a new module would be introduced to the overall solution to provide extra functionality.
