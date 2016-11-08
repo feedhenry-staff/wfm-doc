@@ -40,7 +40,7 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
     <br><img src="assets/images/select-forms-themes.png" title="Select Forms Themes" alt="Select Forms Themes" height="400px">
 
   2. Click **New Theme**.
-  3. Select the **Base Template**.
+  3. Select the **Red Hat Theme**.
   4. Name the theme, for example **wfm**.
   5. Click **Create**.
 
