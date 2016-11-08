@@ -133,6 +133,14 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
 
 The apps are now created, configured, and deployed.
 
+10. Check the web app deploment in RHMAP
+  1. Select the **Projects** header menu item.
+  2. Select the **wfm-demo** project.
+  3. Select the web app.
+  4. From the left-hand side menu, select **Details**.
+  5. Click **Current Hoste**.
+  6. Login with user **trever** and password **123**.
+
 ## Running The Raincatcher Apps Locally
 
 See the [Running The Demo Raincatcher Solution Locally](Running-locally.md) guide for getting set up locally for Raincatcher development.
