@@ -130,8 +130,8 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
 
   3. If it does not indicate success, click **Deploy Cloud App** and verify the next deployment is successful.
-
-The apps are now created, configured, and deployed.
+  
+  ** The apps are now created, configured, and deployed. **
 
 10. Check the web app deploment in RHMAP
   1. Select the **Projects** header menu item.
