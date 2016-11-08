@@ -67,12 +67,11 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   4. Name the service, for example **wfm-auth**.
   5. Click **Next**.
     <br><img src="assets/images/auth-service.png" title="Auth Service" alt="Auth Service" height="400px">
-
-  6. Select the environment for initial deployment.
-  7. Click **Next**.
-  8. Click **Finish**.
-  9. On the **Details** page of the MBaaS service, select **Deploy** from the left-hand side menu.
-  10. Click **Deploy Cloud App**.
+ 
+  6. Click **Finish**.
+  7. Select the environment for initial deployment.
+  8. On the **Details** page of the MBaaS service, select **Deploy** from the left-hand side menu.
+  9. Click **Deploy Cloud App**.
 
 5. Create an auth policy using this new MBaaS service.
   1. Navigate to **Admin -> Auth Policies**.
