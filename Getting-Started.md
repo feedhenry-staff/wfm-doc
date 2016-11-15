@@ -2,27 +2,27 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Getting Started with Raincatcher](#getting-started-with-raincatcher)
+- [Getting Started with RainCatcher](#getting-started-with-raincatcher)
   - [Overview](#overview)
-  - [Raincatcher Structure](#raincatcher-structure)
-    - [Raincatcher Modules](#raincatcher-modules)
-  - [Running the Raincatcher Demo Apps In RHMAP](#running-the-raincatcher-demo-apps-in-rhmap)
-    - [Create and Configure the Raincatcher Demo Project Using the Project Templates](#create-and-configure-the-raincatcher-demo-project-using-the-project-templates)
-  - [Running The Raincatcher Apps Locally](#running-the-raincatcher-apps-locally)
+  - [RainCatcher Structure](#raincatcher-structure)
+    - [RainCatcher Modules](#raincatcher-modules)
+  - [Running the RainCatcher Demo Apps In RHMAP](#running-the-raincatcher-demo-apps-in-rhmap)
+    - [Create and Configure the RainCatcher Demo Project Using the Project Templates](#create-and-configure-the-raincatcher-demo-project-using-the-project-templates)
+  - [Running The RainCatcher Apps Locally](#running-the-raincatcher-apps-locally)
   - [Integrating A New Module Into The Demo Solution](#integrating-a-new-module-into-the-demo-solution)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Getting Started with Raincatcher
+# Getting Started with RainCatcher
 
 ## Overview
-A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.  FeedHenry Raincatcher leverages commoditized mobile hardware, making use of each employee's mobile phone.
+A Field Workforce Management (WFM) application connects a business' back-office with its fleet of mobilized employees.  FeedHenry RainCatcher leverages commoditized mobile hardware, making use of each employee's mobile phone.
 
-## Raincatcher Structure
-Raincatcher consists of a set of reusable modules. A demo application is provided as a project template that showcases how these modules can be assembled into an application. See [this guide](Demo-Solution-Architecture.md) for details on the Demo Solution.
+## RainCatcher Structure
+RainCatcher consists of a set of reusable modules. A demo application is provided as a project template that showcases how these modules can be assembled into an application. For more info on the Demo Solution, read this [guide](Demo-Solution-Architecture.md)
 
-### Raincatcher Modules
-Raincatcher modules are packaged and distributed via [npm](https://www.npmjs.com/).  They are designed to be included in your application using [browserify](http://browserify.org/).  Raincatcher modules export one or more of:
+### RainCatcher Modules
+RainCatcher modules are packaged and distributed via [npm](https://www.npmjs.com/). They are designed to be included in the application using [browserify](http://browserify.org/).  RainCatcher modules export one or more of:
 
 * Angular.js directives or services providing client-side functionality for both the mobile and portal clients.
 * Express.js routes providing a REST API to be consumed by the client-side portions of the module.
@@ -30,10 +30,10 @@ Raincatcher modules are packaged and distributed via [npm](https://www.npmjs.com
 
 Refer to the READMEs of the respective modules for details on their purpose and consumption.
 
-## Running the Raincatcher Demo Apps In RHMAP
-RHMAP provides a set of Raincatcher project templates to help you get the Raincatcher demo apps up and running.
+## Running the RainCatcher Demo Apps In RHMAP
+RHMAP provides a set of RainCatcher project templates to help you get the RainCatcher demo apps up and running.
 
-### Create and Configure the Raincatcher Demo Project Using the Project Templates
+### Create and Configure the RainCatcher Demo Project Using the Project Templates
 
 1. Create a blank Forms theme.
   1. Navigate to **Drag & Drop Apps -> Forms Themes**.
@@ -53,7 +53,7 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   6. Wait until the project gets created, then click **Finish** at the bottom of the page.
     <br><img src="assets/images/new-project.png" title="New Project" alt="New Project" height="400px">
 
-3. Associate the **Forms theme** with the **WFM Demo Project**
+3. Associate the **Forms theme** with the **WFM Demo Project**.
   1. Select the **Projects** header menu item
   2. Open the **wfm-demo** project that you have created
   3. Select **Forms** from the project menu
@@ -101,7 +101,7 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   6. Compare the `FH_SERVICE_AUTHORISED_PROJECTS` in the *App* section to the one in the *System* section. If they differ, click the **Push Environment Variables** button.
     <br><img src="assets/images/service-env-vars.png" title="Service Env Vars" alt="Service Env Vars" height="400px">
 
-7. Copy the project ID from the MBaaS service, and set it as the `WFM_AUTH_GUID`.
+7. Copy the project ID from the MBaaS service and set it as the `WFM_AUTH_GUID`.
   1. From the left-hand side menu, select **Details**.
   2. Click the **Copy** button next to the **Service ID field**.
   <br><img src="assets/images/copy-service-id.png" title="Copy Service ID" alt="Copy Service ID" height="400px">
@@ -125,18 +125,18 @@ RHMAP provides a set of Raincatcher project templates to help you get the Rainca
   6. Enter `WFM_AUTH_POLICY_ID` for the **name**, and set the auth policy name created in step 5 for the **value**.
   7. Click **Push Environment Variables**.
 
-9. Finally, check that the auth service, the cloud app, and the portal app are all deployed and started.
+9. Finally, check that the auth service, the cloud app and the portal app are all deployed and are started.
   1. For each of the above mentioned apps, select **Deploy** from the left-hand side menu.
   2. Ensure that the most recent deployment has a **result** of **Success**.
   <br><img src="assets/images/deploy-status.png" title="Deploy Status" alt="Deploy Status" height="400px">
 
   3. If it does not indicate success, click **Deploy Cloud App** and verify the next deployment is successful.
 
-The apps are now created, configured, and deployed.
+The apps are now created, configured and deployed.
 
-## Running The Raincatcher Apps Locally
+## Running The RainCatcher Apps Locally
 
-See the [Running The Demo Raincatcher Solution Locally](Running-locally.md) guide for getting set up locally for Raincatcher development.
+See the [Running The Demo RainCatcher Solution Locally](Running-Locally.md) guide for setting up a local RainCatcher development environment.
 
 ## Integrating A New Module Into The Demo Solution
 
