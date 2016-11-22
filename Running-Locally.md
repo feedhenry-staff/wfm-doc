@@ -2,59 +2,58 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Running The Demo Raincatcher Solution Locally](#running-the-demo-raincatcher-solution-locally)
+- [Running The Demo RainCatcher Solution Locally](#running-the-demo-raincatcher-solution-locally)
   - [Overview](#overview)
   - [Requirements](#requirements)
     - [MongoDB](#mongodb)
-    - [Ruby (Optional)](#ruby-optional)
-  - [Clone All Of The Raincatcher Modules and Demo Apps](#clone-all-of-the-raincatcher-modules-and-demo-apps)
-  - [Notes On Running Locally](#notes-on-running-locally)
-    - [Using Drag & Drop Apps Locally](#using-drag-&-drop-apps-locally)
+    - [RainCatcher CLI Tool (Optional)](#raincatcher-cli-tool-optional)
+  - [RHMAP Access if Running Locally](#rhmap-access-if-running-locally)
+    - [Using Drag & Drop Apps Locally](#using-drag--drop-apps-locally)
     - [Using A Local Service To Authenticate Users](#using-a-local-service-to-authenticate-users)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Running The Demo Raincatcher Solution Locally
+
+# Running The Demo RainCatcher Solution Locally
 
 ## Overview
 
-This guide presents the steps necessary to:
+This guide describes the steps necessary to:
 
 - Run the Raincatcher demo solution locally.
 - Edit Raincatcher modules and have the results reflected in the demo solution.
 
 ## Requirements
 
-There are some requirements to getting up and running locally with Raincatcher
+To run RainCatcher locally, requirements must be met
 
 ### MongoDB
 
-The *raincatcher-demo-cloud* app and *raincatcher-demo-auth* app requires a running MongoDB instance running. See the [MongoDB Installation Guide](https://docs.mongodb.com/manual/installation/) for details on how to install MongoDB.
+Both the *raincatcher-demo-cloud* app and *raincatcher-demo-auth* app require a running instance of MongoDB. To install MongoDB, refer to the [MongoDB Installation Guide](https://docs.mongodb.com/manual/installation/).
 
-### Ruby (Optional)
+### RainCatcher CLI Tool (Optional)
 
-If you want to use the [Raincatcher CLI Tool](https://github.com/feedhenry-raincatcher/raincatcher-cli) to manage starting all of the demo apps, then you will need to install [Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+The [RainCatcher CLI Tool](https://github.com/feedhenry-raincatcher/raincatcher-cli) is a useful tool for setting up all of the Raincatcher modules and demo apps. It also allows for the management of all demo apps, for exmaple: all demo apps can be started using this tool. If you want to use this tool:
 
+1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/).
 
-## Clone All Of The Raincatcher Modules and Demo Apps
+2. Follow the steps in the README file to setup a local development environment.
 
-The [Raincatcher CLI Tool](https://github.com/feedhenry-raincatcher/raincatcher-cli) is a useful tool for getting set up with all of the Raincatcher modules and Demo Apps. Follow the steps in the README file to get set up for local development.
+## RHMAP Access if Running Locally
 
-## Notes On Running Locally
-
-Some Raincatcher modules require features in the Red Hat Mobile Application Platform (RHMAP) and therefore require access to the RHMAP platform.
+A number of RainCatcher modules require access to features from the Red Hat Mobile Application Platform (RHMAP) and therefore require access to RHMAP.
 
 ### Using Drag & Drop Apps Locally
 
-The *raincatcher-appforms* module requires that the containing cloud app has access to a running RHMAP MBaaS. This allows the local *raincatcher-demo-cloud* app to access
+The *raincatcher-appforms* module requires the containing cloud app to have access to a running RHMAP MBaaS. This allows the local *raincatcher-demo-cloud* app to access
 
 - Forms
 - Themes
 - Drag & Drop App Config
 
-See [this guide](http://docs.feedhenry.com/v3/guides/create_a_forms_project_single_theme.html) for more Drag & Drop Apps feature detail.
+For more information about the Drag & Drop App, refer to this [guide](http://docs.feedhenry.com/v3/guides/create_a_forms_project_single_theme.html).
 
-If you have access to the RHMAP Platform, you can use an existing Cloud App environment variables to populate environment variables from the Cloud App in a Forms Project.
+If you have access to RHMAP, you can use existing Cloud App environment variables to populate environment variables from the Cloud App in a Forms Project.
 
 These environment variables can be placed in the `raincatcher-demo-cloud/Gruntfile.js` file in the Demo Cloud App.
 
@@ -78,11 +77,8 @@ These environment variables can be placed in the `raincatcher-demo-cloud/Gruntfi
 }
 ```
 
-
 ### Using A Local Service To Authenticate Users
 
-The Raincatcher Demo solution uses a RHMAP Service [raincatcher-demo-auth](https://github.com/feedhenry-raincatcher/raincatcher-demo-auth) to perform user authentication functionality. The [raincatcher-demo-cloud](https://github.com/feedhenry-raincatcher/raincatcher-demo-cloud) App uses the $fh.service Cloud API to make requests to the *raincatcher-demo-auth* service.
- 
- The *raincatcher-demo-auth* service can be run locally for ease of editing. In order for the *raincatcher-demo-auth* Cloud App to contact the service, the `WFM_AUTH_GUID` environment variable needs to be set in the `raincatcher-demo-cloud/Gruntfile.js` file.
-  
-  The value can be set to the service GUID in the `FH_SERVICE_MAP` environment variable.
+The RainCatcher Demo solution uses the RHMAP Service [raincatcher-demo-auth](https://github.com/feedhenry-raincatcher/raincatcher-demo-auth) to perform user authentication functionality. The [raincatcher-demo-cloud](https://github.com/feedhenry-raincatcher/raincatcher-demo-cloud) App uses the $fh.service Cloud API to make requests to the *raincatcher-demo-auth* service.
+
+The *raincatcher-demo-auth* service can be run locally for ease of editing. In order for the *raincatcher-demo-auth* Cloud App to contact the service, the `WFM_AUTH_GUID` environment variable needs to be set in the `raincatcher-demo-cloud/Gruntfile.js` file. The value can be set to the service GUID in the `FH_SERVICE_MAP` environment variable.
